@@ -15,7 +15,7 @@ public class MemberController {
 
 	@ModelAttribute
 	public void setResponseHeader(HttpServletResponse response) {
-		response.setHeader("Access-Control-Allow-Credentials", false);
+		response.setHeader("Access-Control-Allow-Credentials", "false");
 		response.setHeader("Access-Control-Allow-Methods", "POST");
 		response.setHeader("Access-Control-Allow-Origin", "*");
 	}
